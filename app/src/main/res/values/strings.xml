@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Bridge</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="fa_icon_1">&#xea3b;</string>
+    <string name="fa_icon_2">&#xea3e;</string>
+    <string name="fa_icon_3">&#xea41;</string>
+    <string name="fa_icon_4">&#xea0a;</string>
+    <string name="fa_icon_5">&#xea42;</string>
+    <string name="fa_icon_6">&#xea12;</string>
+
+</resources>

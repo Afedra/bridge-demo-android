@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#4BB49D"
+        android:minHeight="?attr/actionBarSize"
+        tools:ignore="MissingPrefix">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="10dp"
+            android:layout_height="20dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/back_white" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:padding="8dp"
+            android:text="Update Expenses"
+            android:textAlignment="center"
+            android:textColor="#fff"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+
+    </android.support.v7.widget.Toolbar>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/activity_main"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="20dp"
+                    android:background="#F2F4F3"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+                    <com.alexzh.circleimageview.CircleImageView
+                        android:id="@+id/circleImageView"
+                        android:layout_width="60dp"
+                        android:layout_height="55dp"
+                        android:layout_marginLeft="5dp"
+                        android:src="@drawable/bridge" />
+
+                    <TextView
+                        android:id="@+id/textView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:text="Welcome Livara Beauty Products"
+                        android:textAlignment="center" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <com.bridge.android.widgets.CustomTextInputLayout
+                            app:hintTextAppearance="@style/FloatingLabelTextAppearance"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center">
+
+                            <font.MyEditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="30dp"
+                                android:layout_marginRight="30dp"
+                                android:background="#00000000"
+                                android:hint="Details"
+                                android:inputType="text"
+                                android:letterSpacing="0.025"
+                                android:padding="12dp"
+                                android:textColor="#4DB59E"
+                                android:textColorHint="#000"
+                                android:textSize="16dp" />
+
+                        </com.bridge.android.widgets.CustomTextInputLayout>
+
+                    </LinearLayout>
+
+                    <View
+                        android:id="@+id/view7"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="30dp"
+                        android:background="#4DB59E" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <com.bridge.android.widgets.CustomTextInputLayout
+                            app:hintTextAppearance="@style/FloatingLabelTextAppearance"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center">
+
+                            <font.MyEditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="30dp"
+                                android:layout_marginRight="30dp"
+                                android:background="#00000000"
+                                android:hint="Supplier"
+                                android:inputType="text"
+                                android:letterSpacing="0.025"
+                                android:padding="12dp"
+                                android:textColor="#4DB59E"
+                                android:textColorHint="#000"
+                                android:textSize="16dp" />
+
+                        </com.bridge.android.widgets.CustomTextInputLayout>
+
+                    </LinearLayout>
+
+                    <View
+                        android:id="@+id/view6"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="30dp"
+                        android:background="#4DB59E" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <com.bridge.android.widgets.CustomTextInputLayout
+                            app:hintTextAppearance="@style/FloatingLabelTextAppearance"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center">
+
+                            <font.MyEditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="30dp"
+                                android:layout_marginRight="30dp"
+                                android:background="#00000000"
+                                android:hint="Category"
+                                android:inputType="text"
+                                android:letterSpacing="0.025"
+                                android:padding="12dp"
+                                android:textColor="#4DB59E"
+                                android:textColorHint="#000"
+                                android:textSize="16dp" />
+
+                        </com.bridge.android.widgets.CustomTextInputLayout>
+
+                    </LinearLayout>
+
+                    <View
+                        android:id="@+id/view5"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="30dp"
+                        android:background="#4DB59E" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <com.bridge.android.widgets.CustomTextInputLayout
+                            app:hintTextAppearance="@style/FloatingLabelTextAppearance"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center">
+
+                            <font.MyEditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="30dp"
+                                android:layout_marginRight="30dp"
+                                android:background="#00000000"
+                                android:hint="Supplier"
+                                android:inputType="text"
+                                android:letterSpacing="0.025"
+                                android:padding="12dp"
+                                android:textColor="#4DB59E"
+                                android:textColorHint="#000"
+                                android:textSize="16dp" />
+
+                        </com.bridge.android.widgets.CustomTextInputLayout>
+
+                    </LinearLayout>
+
+                    <View
+                        android:id="@+id/view3"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="30dp"
+                        android:background="#4DB59E" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <com.bridge.android.widgets.CustomTextInputLayout
+                            app:hintTextAppearance="@style/FloatingLabelTextAppearance"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center">
+
+                            <font.MyEditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="30dp"
+                                android:layout_marginRight="30dp"
+                                android:background="#00000000"
+                                android:hint="Supplier Contact"
+                                android:inputType="text"
+                                android:letterSpacing="0.025"
+                                android:padding="12dp"
+                                android:textColor="#4DB59E"
+                                android:textColorHint="#000"
+                                android:textSize="16dp" />
+
+                        </com.bridge.android.widgets.CustomTextInputLayout>
+
+                    </LinearLayout>
+
+                    <View
+                        android:id="@+id/view2"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="30dp"
+                        android:background="#4DB59E" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <com.bridge.android.widgets.CustomTextInputLayout
+                            app:hintTextAppearance="@style/FloatingLabelTextAppearance"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center">
+
+                            <font.MyEditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="30dp"
+                                android:layout_marginRight="30dp"
+                                android:background="#00000000"
+                                android:hint="Amount"
+                                android:inputType="text"
+                                android:letterSpacing="0.025"
+                                android:padding="12dp"
+                                android:textColor="#4DB59E"
+                                android:textColorHint="#000"
+                                android:textSize="16dp" />
+
+                        </com.bridge.android.widgets.CustomTextInputLayout>
+
+                    </LinearLayout>
+
+                    <View
+                        android:id="@+id/view"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="30dp"
+                        android:background="#4DB59E" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/textView3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="30dp"
+                            android:layout_weight="1"
+                            android:padding="10dp"
+                            android:text="Tax Included?" />
+
+                        <CheckBox
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:layout_marginRight="30dp"
+                            android:checked="true"
+                            android:padding="10dp" />
+                    </LinearLayout>
+
+                    <font.MyTextView
+                        android:layout_width="100dp"
+
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/border"
+                        android:clickable="true"
+                        android:contextClickable="true"
+                        android:letterSpacing="0.025"
+                        android:longClickable="true"
+                        android:padding="10dp"
+                        android:text="UPDATE"
+                        android:textAlignment="center"
+                        android:textColor="#fff"
+                        android:textSize="16dp" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+
+</LinearLayout>

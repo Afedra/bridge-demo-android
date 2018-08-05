@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="images">
+        <item name="fa_icon_areachart">&#xea3b;</item>
+        <item name="fa_icon_piechart">&#xea3e;</item>
+        <item name="fa_icon_linechart">&#xea41;</item>
+        <item name="fa_icon_areachart">&#xea0a;</item>
+        <item name="fa_icon_piechart">&#xea42;</item>
+        <item name="fa_icon_linechart">&#xea10;</item>
+    </string-array>
+
+    <string-array name="name">
+        <item name="fa_icon_areachart">Sales</item>
+        <item name="fa_icon_piechart">Expense</item>
+        <item name="fa_icon_linechart">Inventory</item>
+        <item name="fa_icon_areachart">Business Plan</item>
+        <item name="fa_icon_piechart">Tax Summary</item>
+        <item name="fa_icon_linechart">Deloitte Alerts</item>
+    </string-array>
+</resources>

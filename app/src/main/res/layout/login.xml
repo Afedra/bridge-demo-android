@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#FFFFFF">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:id="@+id/logo"
+                android:layout_width="160dp"
+                android:layout_height="170dp"
+                android:layout_gravity="center_horizontal|center"
+                />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.bridge.android.widgets.CustomTextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    app:hintTextAppearance="@style/FloatingLabelTextAppearance">
+
+                    <font.MyEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginRight="40dp"
+                        android:background="#00000000"
+                        android:hint="Username"
+                        android:inputType="text"
+                        android:letterSpacing="0.025"
+                        android:padding="12dp"
+                        android:textColor="#4DB59E"
+                        android:textColorHint="#000"
+                        android:textSize="16dp" />
+
+                </com.bridge.android.widgets.CustomTextInputLayout>
+
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:background="#4DB59E" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.bridge.android.widgets.CustomTextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    app:hintTextAppearance="@style/FloatingLabelTextAppearance">
+
+                    <font.MyEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginRight="40dp"
+                        android:background="#00000000"
+                        android:hint="Password"
+                        android:inputType="textPassword"
+                        android:letterSpacing="0.025"
+                        android:padding="12dp"
+                        android:singleLine="true"
+                        android:textColor="#4DB59E"
+                        android:textColorHint="#000"
+                        android:textSize="16dp" />
+
+                </com.bridge.android.widgets.CustomTextInputLayout>
+
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:background="#4DB59E" />
+
+
+        </LinearLayout>
+
+        <font.MyTextView
+            android:id="@+id/login"
+            android:layout_width="150dp"
+
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/border"
+            android:clickable="true"
+            android:contextClickable="true"
+            android:letterSpacing="0.025"
+            android:longClickable="true"
+            android:padding="10dp"
+            android:text="Sign In"
+            android:textAlignment="center"
+            android:textColor="#fff"
+            android:textSize="16dp" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="40dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            <font.MyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:letterSpacing="0.025"
+                android:text="Not a  registered business?"
+                android:textColor="#4DB59E"
+                android:textSize="14dp" />
+
+            <font.MyTextView
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/border_round"
+                android:clickable="true"
+                android:contextClickable="true"
+                android:letterSpacing="0.025"
+                android:linksClickable="false"
+                android:longClickable="true"
+                android:padding="10dp"
+                android:text="Create Account"
+                android:textAlignment="center"
+                android:textColor="#4BB49D"
+                android:textSize="16dp" />
+
+            <font.MyTextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:letterSpacing="0.025"
+                android:padding="10dp"
+                android:text="Powered by"
+                android:textAlignment="center"
+                android:textColor="#4BB49D"
+                android:textSize="16dp" />
+
+            <ImageView
+                android:id="@+id/logo2"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_gravity="center_horizontal|center" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</ScrollView>
